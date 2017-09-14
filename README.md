@@ -1,32 +1,41 @@
-# YAOJI - An Electronic Plant based on Arduino#
-## 妖姬 - 基于Arduino的电子植物##
+# Yaoji - An AR Digital Plant on Arduino and Android
+妖姬 - 基于Arduino和Android的虚拟电子植物
+
 ----------
-## 1. What is YAOJI? ##
-YAOJI is an electronic plant based on the Arduino project. It has five full-RGB leds, one illumination sensor, one temperature & humidity sensor and one infrared sensor. Use Arduino Nano 3.0 as the core controller and a wifi module as a bridge to communicate with Android app. It was a project in Geekon Hackmarthon and got the third prize.
 
-## 2. Project Directory Tree ##
-#### - doc ####
-descriptions and communication protocol
+## 1. About Yaoji
+Yaoji is an open-source digital plant based on Arduino and Android. It is based on the popular idea of Augmented Reality (AR). By using the deployed sensors and Leds on Yaoji, users can interact with Yaoji and see its response on an Android phone.
 
-#### - hardware ####
+![](\photos\yaoji-finished.png)
+
+![](\photos\android-main.png)
+
+Yaoji has five full-RGB leds, one illumination sensor, one temperature & humidity sensor and one infrared sensor. Yaoji uses an Arduino Nano 3.0 as the core controller and a wifi module as a bridge to communicate with the Android app. It was a prize-winning (third prize) project in Geekon Hackmarthon in 2013.
+
+![](\photos\hardware-arch.jpg)
+
+
+## 2. Project Directory
+### /documents
+descriptions, datasheets and communication protocol
+
+### /hardware
 schematics, pcb and mechanical CAD
 
-#### - reference ####
-useful articles and sensor datasheets
+### /photos
+photos of Yaoji.
 
-#### -photos ####
-some photos of YAOJI.
+### /software
+- **/arduino**: Arduino source code and libraries of the firmware (.ino).
 
-#### - software ####
-- arduino:including the source code of the firmware
+- **/android**: user application on Android (.apk).
 
-- android:user application on Android
+- **/windowns**: a Windows demo of a sound analyzer that transfer sound spectrum into LED color (Visual Studio Project).
 
-- windowns:a sound to color demo on windows
 
-## Contributors ##
-|Name|Task|
-|---|---|
-|YunFei|System Design & Arduino Programming|
-|leepood|Android App Development|
-|Congbin Zhong| Hardware Design and Debug|
+## 3. Contributors
+|Name    |Role|
+|---     |----|
+|YunFei  | System Design & Arduino Programming |
+|leepood | Android App Development |
+|Congbin Zhong | Hardware Design and Debug |
